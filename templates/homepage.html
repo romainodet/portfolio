@@ -1,0 +1,1270 @@
+{% extends 'layout.html' %}
+{% block meta_title %}Romain ODET - Étudiant à l&#x27;École LDLC{% endblock %}
+{% block meta_description %}Étudiant à l&#x27;École LDLC en première année. Passionné d&#x27;entreprenariat et de
+    technologie{% endblock %}
+{% block content %}
+    <!-- main header -->
+    <header class="yb-main-header" id="main-header">
+
+        <!-- home section -->
+        <div class="yb-full-height " id="home">
+            <section class="yb-profile-desc">
+                <div class="yb-section-point-wrapper" data-uk-parallax="opacity: 1, 0;">
+                    <div class="uk-container">
+                        <div class="yb-section-point">
+                            <sup>01</sup>
+                            <span>accueil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yb-graphics">
+                    <div class="yb-graphic-1" data-uk-parallax="blur: 0,30;"></div>
+                    <div class="yb-graphic-2" data-uk-parallax="blur: 0,30;"></div>
+                </div>
+                <div class="uk-container uk-text-center yb-profile-desc-wrap uk-position-relative">
+                    <!--<img class="lazyload" data-src="{{ url_for('static', filename='src/img/profile_nobgc.png') }}" alt=""/>-->
+                    <h1 class="uk-text-bold yb-gradient-text"><span>Romain</span> <span>Odet</span></h1>
+                    <div class="uk-text-bold yb-myjob">
+                        Je suis <span id="typed" class="typed"></span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- end home section -->
+
+        <!-- main menu -->
+        <nav class="yb-main-menu " id="main-menu">
+            <div class="uk-container" data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="yb-logo uk-navbar-item uk-logo" href="{{ url_for('homepage') }}"><span>Romain Odet</span></a>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
+                        <span data-uk-navbar-toggle-icon class="yb-icon-menu"></span>
+                        <span data-uk-icon="close" class="yb-icon-close"></span>
+                    </a>
+                </div>
+                <div class="yb-menu-toggle-wrapper" id="menucollapse">
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 79 ">
+                            <li>
+                                <a class="yb-inner-link" href="#home"> Accueil</a>
+                            </li>
+                            <li>
+                                <a class="yb-inner-link" href="#about"> À propos</a>
+                            </li>
+                            <li>
+                                <a class="yb-inner-link" href="#resume"> CV</a>
+                            </li>
+                            <li>
+                                <a class="yb-inner-link" href="#portfolio"> Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="yb-inner-link" href="#contact"> Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav yb-social-icons">
+                            <li>
+                                <a href="https://linkedin.com/in/romainodet/">
+                                    <span class="uk-icon " data-uk-icon="icon: linkedin"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/romainodet/">
+                                    <span class="uk-icon" data-uk-icon="icon: twitter"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end main menu -->
+    </header>
+    <!-- end main header -->
+
+    <!-- main section -->
+    <main class="yb-main-content">
+        <!-- about section -->
+        <section id="about" class="yb-section">
+            <div class="yb-my-profile">
+                <div class="uk-container">
+                    <div class="uk-grid-collapse uk-child-width-expand@m" data-uk-grid>
+                        <div>
+                            <div class="yb-my-profile-img uk-background-cover uk-background-norepeat uk-background-contain lazyload"
+                                 style="background-color: #FFFFFF;"
+                                 data-src="{{ url_for('static', filename='src/img/profile_nobgc.png') }}" data-uk-img
+                                 data-uk-lightbox>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="yb-my-profile-desc">
+                                <div class="yb-section-point-wrapper">
+                                    <div class="yb-section-point right">
+                                        <sup>02</sup>
+                                        <span>à propos</span>
+                                    </div>
+                                </div>
+                                <div class="yb-my-profile-desc-top">
+                                    <h2 class="yb-section-title">Bonjour!</h2>
+                                    <p>
+                                        Étudiant en troisième année à l'école LDLC, école du numérique formant en trois
+                                        ans au
+                                        web marketing et à la communication, à entrepreneuriat. 🎓
+                                        <br>Passionné par la communication digitale
+                                        et la publicité, je cherche à toujours innover et à comprendre
+                                        les enjeux du numérique au sein des TPE et des PME. ↗️
+                                    </p>
+                                </div>
+                                <div class="yb-my-profile-desc-bottom yb-bg-soft">
+                                    <ul class="yb-my-profile-desc-info uk-list">
+                                        <li>
+                                            <span>Né le</span> : 03/12/2000
+                                        </li>
+                                        <li>
+                                            <span>Permis</span> : B
+                                        </li>
+                                        <li>
+                                            <span>Email</span> : romain@romainodet.fr
+                                        </li>
+                                        <li>
+                                            <span>Site web</span> : www.romainodet.fr
+                                        </li>
+                                        <li>
+                                            <span>Adresse</span> : Région lyonnaise
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yb-border-top yb-border-bottom ">
+                <div class="uk-container">
+                    <div data-uk-grid
+                         class="yb-box-services uk-child-width-1-4@l uk-child-width-1-2 uk-text-center uk-grid-divider">
+                        <div>
+                            <div class="yb-box-service">
+                                <span class="uk-icon" data-uk-icon="icon: laptop; ratio: 1.5"></span>
+                                <h5>Étudiant à l'École LDLC</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="yb-box-service">
+                                <span class="uk-icon" data-uk-icon="icon: paint-bucket; ratio: 1.5"></span>
+                                <h5>Communication digitale</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="yb-box-service">
+                                <span class="uk-icon" data-uk-icon="icon: world; ratio: 1.5"></span>
+                                <h5>Web Marketing</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="yb-box-service">
+                                <span class="uk-icon" data-uk-icon="icon: settings; ratio: 1.5"></span>
+                                <h5>Conception web</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end about section -->
+        <!-- resume section -->
+        <section class="yb-section " id="resume">
+            <div class="yb-section-point-wrapper">
+                <div class="uk-container">
+                    <div class="yb-section-point">
+                        <sup>03</sup>
+                        <span>cv</span>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-container">
+                <div data-uk-grid class="uk-grid-divider">
+                    <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom yb-section-padding-top "
+                         id="resume-nav-wrapper">
+                        <div data-uk-sticky="bottom: #resume-nav-wrapper; offset: 100; media: 650">
+                            <ul class="yb-nav-left uk-tab-left uk-tab"
+                                data-uk-scrollspy-nav="closest: li; scroll: false; offset: 120">
+                                <li class="uk-active">
+                                    <a href="#education" class="yb-inner-link" data-offset="120">
+                                        <span data-uk-icon="minus"></span>
+                                        Études
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#experience" class="yb-inner-link" data-offset="120">
+                                        <span data-uk-icon="minus"></span>
+                                        Expériences professionnelles
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#skills" class="yb-inner-link" data-offset="120">
+                                        <span data-uk-icon="minus"></span>
+                                        Compétences
+                                    </a>
+                                </li>
+                                <!--<li>
+                                  <a href="#awwwards" class="yb-inner-link" data-offset="120">
+                                    <span data-uk-icon="minus"></span>
+                                    Certifications
+                                  </a>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@s yb-section-padding-top">
+                        <div>
+                            <h2 class="yb-section-title uk-heading-line" id="education">
+                                <span>Études</span>
+                            </h2>
+                            <div class="yb-resume-list">
+                                <ul class="uk-list uk-list-large uk-list-divider">
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>2018 - 2021</span></div>
+                                            </div>
+                                            <h4 class="yb-section-title">Chef de projet de la transition du
+                                                numérique</h4>
+                                            <strong>L'École LDLC</strong>
+                                            <div class="uk-text-small">
+                                                <p>École en 3 ans formant des cadres généralistes du numérique.
+                                                    Formation professionalisante avec un fonctionnement en mode "projet"
+                                                    avec 4 grands piliers de formation :
+                                                <ul>
+                                                    <li>→ Marketing & Communication</li>
+                                                    <li>→ Technologies & Usages</li>
+                                                    <li>→ Vie de l'entreprise</li>
+                                                    <li>→ Perspectives & réalités</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>2016 - 2018</span></div>
+                                            </div>
+                                            <h4 class="yb-section-title">Baccalauréat technologique : sciences et
+                                                technologies de l'industrie et du développement durable / Technologie
+                                                des systèmes d'information et du numérique</h4>
+                                            <strong>Lycée La Pléiade</strong>
+                                            <div class="uk-text-small">
+                                                <p>Baccalauréat obtenu avec la mention Très Bien</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="yb-section-title  uk-heading-line " id="experience">
+                                <span>Expériences professionnelles</span>
+                            </h2>
+                            <div class="yb-resume-list">
+                                <ul class="uk-list uk-list-large uk-list-divider">
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>Mai 2020 - Auj.</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="yb-section-title">Co-Fondateur</h4>
+                                            <strong>Foodtruck Today</strong>
+                                            <div class="uk-text-small">
+                                                <p>
+                                                    Foodtruck Today, l'appli pour trouver votre repas de midi :
+                                                    Foodtruck Today c’est l’appli idéale pour trouver votre repas du
+                                                    midi sur le parc du puy d’or à Limonest !<br>
+                                                    <br>
+                                                    Différentes missions réalisées :<br>
+                                                <ul>
+                                                    <li>→ Réalisation complète de la stratégie de communication digitale
+                                                        ainsi que des éléments imprimés
+                                                    </li>
+                                                    <li>→ Réalisation des différentes créations graphique web & print
+                                                    </li>
+                                                    <li>→ Réalisation du site web corporate sous Wordpress/Elementor
+                                                    </li>
+                                                    <br>
+                                                    <li>→ Réalisation de la base de données sous MariaDb
+                                                    </li>
+                                                    <li>→ Réalisation d'une API pour la récupération des données sur
+                                                        l'application mobile sous Flutter
+                                                    </li>
+                                                    <li>→ Réalisation de la progressive web app de l'application mobile
+                                                        en Python/Flask, MariaDb et Materialize CSS
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>Septembre 2019 - Décémbre 2019</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="yb-section-title">Assistant communication</h4>
+                                            <strong>LDLC Distribution</strong>
+                                            <div class="uk-text-small">
+                                                <p>Durant mon stage de deuxième année, j’ai eu l’occasion d’intégrer
+                                                    l’entreprise LDLC Distribution.<br>
+                                                    LDLC Distribution filliale du groupe LDLC pilotant les boutiques
+                                                    LDLC.com.<br>
+                                                    <br>
+                                                    Mes missions étaient larges et concernaient la communication, la
+                                                    publicité et le marketing digital.<br>
+                                                    <br>
+                                                    Parmi mes missions :<br>
+                                                <ul>
+                                                    <li>→ Veille des différents posts sur les réseaux sociaux des
+                                                        boutiques
+                                                    </li>
+                                                    <li>→ Actualisation de la base de connaissance réseaux sociaux et
+                                                        communication
+                                                    </li>
+                                                    <li>→ Création de campagnes Facebook et Instagram ads par des moyens
+                                                        de communication nouveaux
+                                                    </li>
+                                                    <li>
+                                                        → Création et configuration des pages Facebook, Instagram
+                                                        et Google My Business
+                                                    </li>
+                                                    <li>→ Reporting d’ouverture de trois boutiques</li>
+                                                    <br>
+                                                    <li>→ Envoi d’emailing avec le logiciel Neolane 6.1
+                                                        <ul>
+                                                            <li>→ Amélioration des workflow</li>
+                                                            <li>→ Personalisation des en-têtes</li>
+                                                            <li>→ Mise en œuvre d'une personalisation intégrale du pied
+                                                                de page des newsletter boutiques
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>→ Reporting des boutiques les moins actives sur les réseaux
+                                                        sociaux et mise en place d'actions
+                                                    </li>
+                                                    <li>→ Création de posts Facebook et Instagram "Prêts à envoyer" pour
+                                                        les boutiques
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>2018 - Auj.</span></div>
+                                            </div>
+                                            <h4 class="yb-section-title">Chargé du numérique</h4>
+                                            <strong>AmelEvents</strong>
+                                            <div class="uk-text-small">
+                                                <p>
+                                                    La TPE AmelEvents est un traiteur événementiel basé à
+                                                    Saint-Priest.<br>
+                                                    Mes missions ont été larges notamment avec l'amélioration du site
+                                                    internet,
+                                                    mais également en accompagnant la gérante dans ses réseaux
+                                                    sociaux.<br>
+
+                                                <ul>
+                                                    <li>→ Gestion du site vitrine</li>
+                                                    <li>→ Amélioration des contenus</li>
+                                                    <li>→ Amélioration de la communication sur les réseaux sociaux</li>
+                                                    <li>→ Création de supports graphique pour les différents événements
+                                                        organisés.
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                                Ré-actualisation du site web au standards actuel<br>
+                                                <ul>
+                                                    <li>→ Passage au protocole HTTPS</li>
+                                                    <li>→ Mise en conformité RGPD</li>
+                                                    <li>→ Allègement du site web</li>
+                                                    <li>→ Transfert des données e-mails et de l’hébergement web vers un
+                                                        nouveau prestataire
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>2019 - 2020</span></div>
+                                            </div>
+                                            <h4 class="yb-section-title">Chargé de la communication</h4>
+                                            <strong>L'auberge de la chapelle</strong>
+                                            <div class="uk-text-small">
+                                                <p>
+                                                    Dans le cadre de l'ouverture du restaurant "L'auberge de la
+                                                    chapelle",
+                                                    j'ai été chargé de développer la communication et la présence
+                                                    numérique du restaurant :<br>
+                                                <ul>
+                                                    <li>→ Création de la présence numérique avec des pages Facebook,
+                                                        Google et TripAdvisor
+                                                    </li>
+                                                    <li>→ Création de la charte graphique et des logotypes</li>
+                                                    <li>→ Création des modèles de supports commerciaux</li>
+                                                    <li>→ Gestion de la page Facebook et MyBusiness : réponse aux avis,
+                                                        actualisation des posts
+                                                    </li>
+                                                    <li>→ Accompagnement de la gérante au numérique</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>2017 - 2018</span></div>
+                                            </div>
+                                            <h4 class="yb-section-title">Chargé du numérique</h4>
+                                            <strong>La tablée médiévale</strong>
+                                            <div class="uk-text-small">
+                                                <p>
+                                                    Afin d'accroître la notoriété du restaurant, création du site web
+                                                    multilingue dans la
+                                                    ville touristique de Crémieu. Amélioration de la communication sur
+                                                    le web,
+                                                    mais également du print avec les menus rédigés en français et
+                                                    traduit en anglais.<br>
+                                                <ul>
+                                                    <li>→ Création du site web multilingue</li>
+                                                    <li>→ Création d’adresses email avec le nom de domaine</li>
+                                                    <li>→ Refonte graphique des cartes du restaurant.</li>
+                                                    <li>→ Traduction des cartes du restaurant en anglais et en
+                                                        français
+                                                    </li>
+                                                    <li>→ Support graphique lors d'événements spéciaux</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="yb-resume-item">
+                                            <div class="yb-resume-item-date">
+                                                <div class="yb-resume-item-date-icon"><span
+                                                        data-uk-icon="calendar"></span>
+                                                </div>
+                                                <div class="yb-resume-item-date-text"><span>2015 - 2018</span></div>
+                                            </div>
+                                            <h4 class="yb-section-title">Chargé du numérique</h4>
+                                            <strong>Diffupack</strong>
+                                            <div class="uk-text-small">
+                                                <p>
+                                                    Entreprise familiale, amélioration de la communication extérieure
+                                                    print et web,
+                                                    gestion des réseaux sociaux, et optimisation du SEO<br>
+                                                <ul>
+                                                    <li>→ Amélioration et mise à jour du site web</li>
+                                                    <li>→ Réalisation de la charte graphique des documents : cartes de
+                                                        visite, factures, bon de commande…
+                                                    </li>
+                                                    <li>→ Utilisation approfondie du logiciel Ciel Gestion Commerciale
+                                                        pour la création de modèle de facture, devis… et d’emails, ainsi
+                                                        qu’utilisation lors de vente et d’inventaire
+                                                    </li>
+                                                    <li>→ Reconstruction du réseau de l’entreprise</li>
+                                                    <li>→ Optimisation du SEO sur le site web</li>
+                                                    <li>→ Gestion des pages facebook et google</li>
+                                                    <li>→ Connexion des différents terminaux de l’entreprise au cloud
+                                                        Google (G Apps)
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="yb-section-title  uk-heading-line " id="skills">
+                                <span>Compétences</span>
+                            </h2>
+                            <div class="yb-margin-top-1 yb-margin-bottom-2">
+                                <div class="uk-grid-collapse  uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center"
+                                     data-uk-grid>
+                                    <div class="yb-bg-soft">
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggc3R5bGU9IiIgZD0iTTIxMS41NjMsMjYuMTMzYy0xLjk3MS0yLjk5My01LjMxMy00Ljc5Ni04Ljg5Ni00LjhoLTE5MkM0Ljc3NiwyMS4zMzMsMCwyNi4xMDksMCwzMnY0NDggICBjLTAuMDAxLDUuMDcsMy41NjYsOS40MzksOC41MzMsMTAuNDUzYzAuNzAyLDAuMTQxLDEuNDE3LDAuMjEzLDIuMTMzLDAuMjEzYzQuMjU1LDAuMDE1LDguMTExLTIuNSw5LjgxMy02LjRsMTkyLTQ0OCAgIEMyMTMuOTA5LDMyLjk1MSwyMTMuNTY0LDI5LjEzOCwyMTEuNTYzLDI2LjEzM3oiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiNmNDQzMzYiIGNsYXNzPSIiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik0yNjUuODc3LDE4Ny45ODljLTEuNjMyLTQuMDIxLTUuNTM3LTYuNjUzLTkuODc3LTYuNjU2bDAsMGMtNC4yOTMtMC4wMDEtOC4xNjksMi41NzEtOS44MzUsNi41MjggICBsLTg1LjMzMywyMDIuNjY3Yy0yLjI4Niw1LjQzLDAuMjYzLDExLjY4NCw1LjY5MiwxMy45N2MxLjMxMSwwLjU1MiwyLjcyLDAuODM2LDQuMTQyLDAuODM2aDc3LjkzMWwyOS40MTksNzguNDIxICAgYzEuNTY0LDQuMTU4LDUuNTQxLDYuOTEyLDkuOTg0LDYuOTEyaDg1LjMzM2M1Ljg5MS0wLjAwNCwxMC42NjQtNC43ODIsMTAuNjYtMTAuNjczYy0wLjAwMS0xLjM3My0wLjI2Ny0yLjczMi0wLjc4My00LjAwNCAgIEwyNjUuODc3LDE4Ny45ODl6IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjZjQ0MzM2IiBjbGFzcz0iIj48L3BhdGg+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNNTAxLjMzMywyMS4zMzNoLTE5MmMtNS44OTEtMC4wMjEtMTAuNjgzLDQuNzM4LTEwLjcwNCwxMC42MjljLTAuMDA1LDEuNDgxLDAuMjk4LDIuOTQ3LDAuODksNC4zMDQgICBsMTkyLDQ0OGMxLjcwMiwzLjksNS41NTksNi40MTUsOS44MTMsNi40YzAuNzE2LTAuMDAxLDEuNDMxLTAuMDcyLDIuMTMzLTAuMjEzYzQuOTY3LTEuMDE0LDguNTM0LTUuMzg0LDguNTMzLTEwLjQ1M1YzMiAgIEM1MTIsMjYuMTA5LDUwNy4yMjQsMjEuMzMzLDUwMS4zMzMsMjEuMzMzeiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iI2Y0NDMzNiIgY2xhc3M9IiI+PC9wYXRoPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                                            <h5 class="yb-box-circle-title">Adobe PS, Ai, iD, XD</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im02MS4yOTMgNDkuMjkzLTIuMjkzIDIuMjkzdi0uNTg2aC0xMnYxMmgxMnYtOC41ODZsMy43MDctMy43MDd6bS00LjI5MyAxMS43MDdoLTh2LThoOHYuNTg2bC00IDQtMi4yOTMtMi4yOTMtMS40MTQgMS40MTQgMy43MDcgMy43MDcgNC00eiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTQ3IDM3djEyaDEydi04LjU4NmwzLjcwNy0zLjcwNy0xLjQxNC0xLjQxNC0yLjI5MyAyLjI5M3YtLjU4NnptMTAgMTBoLTh2LThoOHYuNTg2bC00IDQtMi4yOTMtMi4yOTMtMS40MTQgMS40MTQgMy43MDcgMy43MDcgNC00eiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTMxIDUxaDE0djJoLTE0eiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTMxIDU1aDE0djJoLTE0eiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTMxIDU5aDEwdjJoLTEweiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTQzIDU5aDJ2MmgtMnoiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zMSAzN2gxNHYyaC0xNHoiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zMSA0MWgxNHYyaC0xNHoiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zMSA0NWgxMHYyaC0xMHoiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im00MyA0NWgydjJoLTJ6IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzMuNTI3IDMyLjg3NGMyLjU3NCAxLjM4NyA1LjQ2NyAyLjEyNiA4LjQ3MyAyLjEyNiA0Ljc4MSAwIDkuMjc2LTEuODYyIDEyLjY1Ny01LjI0M2wxLjM0My0xLjM0M2MuNjQ1LS42NDYgMS0xLjUwMyAxLTIuNDE0cy0uMzU1LTEuNzY5LTEtMi40MTRsLTEuMzQzLTEuMzQzYy0zLjM4MS0zLjM4MS03Ljg3Ni01LjI0My0xMi42NTctNS4yNDMtMy4wMDcgMC01LjkuNzM5LTguNDc1IDIuMTI3LS44OTMtMi4wMTQtMi4xNTgtMy43OTEtMy42ODgtNS4yNzhsNi4xMjUtNS40NzMgNS4wMzggNS4wMzggOS05djUuNTg2aDJ2LTloLTl2Mmg1LjU4NmwtNy41ODYgNy41ODYtNC45NjEtNC45NjItNy43MiA2Ljg5OGMtMy4yMzctMi40NzctNy4zNDItMy43OTEtMTEuNjA2LTMuNDc0LTguMzg3LjYyLTE1LjI3OSA3LjY5LTE1LjY5MSAxNi4wOTgtLjIzIDQuNzA3IDEuNDI2IDkuMTc0IDQuNjY2IDEyLjU3NiAyLjA1MiAyLjE1NCA0LjU1OSAzLjY5MSA3LjMxMyA0LjUzM3YxNS43NDVjMCAyLjc1NyAyLjI0MyA1IDUgNXM1LTIuMjQzIDUtNXYtMTUuNzY1YzQuNjI5LTEuNDM4IDguNTE1LTQuODIyIDEwLjUyNi05LjM2MXptLTEwLjUyNyAyLjkyN2MtLjYzNS4zMjMtMS4zMDMuNTg3LTIgLjc4MnYtNS41ODNoMnptLTQtNi44MDF2Ny45NTRjLS4zMy4wMjktLjY2My4wNDYtMSAuMDQ2LS4zMzggMC0uNjctLjAyMS0xLS4wNTF2LTUuOTQ5aC02djMuNDc5Yy0yLjQ0MS0yLjAyLTQtNS4wNzEtNC04LjQ3OSAwLTYuMDY1IDQuOTM1LTExIDExLTExIDIuMDk1IDAgNC4wNjEuNTg3IDUuNzQgMS42MTNsLTMuNDcgMy4xYy0uNjQ2LS40NDctMS40MjYtLjcxMy0yLjI3LS43MTMtMi4yMDYgMC00IDEuNzk0LTQgNHMxLjc5NCA0IDQgNCA0LTEuNzk0IDQtNGMwLS42MzctLjE2My0xLjIzMS0uNDI5LTEuNzY2bDMuODA2LTMuNDAxYzEuNDk2IDEuMzU1IDIuNjE4IDMuMTMgMy4xOTMgNS4xODJsLS41Ny41NzFjLS42NDUuNjQ2LTEgMS41MDMtMSAyLjQxNHMuMzU1IDEuNzY5IDEgMi40MTRsLjU3LjU3Yy0uNjIyIDIuMjIyLTEuODg2IDQuMTItMy41NyA1LjUxdi01LjQ5NHptLTQgNy41NzRjLS42OTgtLjE5OC0xLjM2Ni0uNDYzLTItLjc4OHYtMi43ODZoMnptNS0xMy41NzRjMCAxLjEwMy0uODk3IDItMiAycy0yLS44OTctMi0yIC44OTctMiAyLTIgMiAuODk3IDIgMnptOS40MTUgNGMtLjI2OC0uMjY4LS40MTUtLjYyMi0uNDE1LTFzLjE0Ny0uNzMyLjQxNC0xbDEuMzQzLTEuMzQzYzEuMTctMS4xNyAyLjQ5My0yLjEyOCAzLjkyLTIuODctMS4wNTEgMS40NzMtMS42NzcgMy4yNjktMS42NzcgNS4yMTNzLjYyNiAzLjc0IDEuNjc3IDUuMjEzYy0xLjQyNy0uNzQyLTIuNzUtMS43LTMuOTItMi44N3ptMTkuNTg1LTFjMCAzLjg1OS0zLjE0IDctNyA3cy03LTMuMTQxLTctNyAzLjE0LTcgNy03IDcgMy4xNDEgNyA3em01LjU4NS0xYy4yNjguMjY4LjQxNS42MjIuNDE1IDFzLS4xNDcuNzMyLS40MTQgMWwtMS4zNDMgMS4zNDNjLTEuMTcgMS4xNy0yLjQ5MyAyLjEyOC0zLjkyIDIuODcgMS4wNTEtMS40NzMgMS42NzctMy4yNjkgMS42NzctNS4yMTNzLS42MjYtMy43NC0xLjY3Ny01LjIxM2MxLjQyNy43NDIgMi43NSAxLjcgMy45MiAyLjg3em0tMjIuNzgxLTQuODAxYy0uNTY1LjM5NC0xLjEwNi44MjgtMS42MjggMS4yODktLjcxMi0xLjk0LTEuODQ1LTMuNjQyLTMuMjk0LTQuOTk5bDEuNDYxLTEuMzA1YzEuNDYxIDEuMzk0IDIuNjUgMy4wODggMy40NjEgNS4wMTV6bS0xMy44MDQgNDAuODAxYy0xLjY1NCAwLTMtMS4zNDYtMy0zdi0xMWg2djExYzAgMS42NTQtMS4zNDYgMy0zIDN6bTMtMTZoLTZ2LTIuMjc4Yy45ODEuMTczIDEuOTguMjc4IDMgLjI3OCAxLjAxOSAwIDIuMDItLjEwMiAzLS4yNzl6bS0zLTRjLTQuMTQ2IDAtOC4wMDQtMS42NTQtMTAuODY1LTQuNjU4LTIuODU4LTMuMDAyLTQuMzItNi45NDMtNC4xMTYtMTEuMDk5LjM2My03LjQxNiA2LjQ0My0xMy42NTQgMTMuODQxLTE0LjIwMSAzLjYyMy0uMjcgNy4xMTguODA4IDkuOTI4IDIuODQ3bC0xLjQ5NCAxLjMzNGMtMi4wODktMS40MTMtNC42MDQtMi4yMjMtNy4yOTQtMi4yMjMtNy4xNjggMC0xMyA1LjgzMi0xMyAxM3M1LjgzMiAxMyAxMyAxM2M1LjUyOCAwIDEwLjMxNi0zLjQyIDEyLjE3NS04LjQ4OC41MjMuNDYyIDEuMDY0Ljg5NiAxLjYzIDEuMjktMi4zMjYgNS41My03Ljc3MiA5LjE5OC0xMy44MDUgOS4xOTh6IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNDIgMzFjMi43NTcgMCA1LTIuMjQzIDUtNXMtMi4yNDMtNS01LTUtNSAyLjI0My01IDUgMi4yNDMgNSA1IDV6bTAtOGMxLjY1NCAwIDMgMS4zNDYgMyAzcy0xLjM0NiAzLTMgMy0zLTEuMzQ2LTMtMyAxLjM0Ni0zIDMtM3oiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48Y2lyY2xlIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY3g9IjQyIiBjeT0iMjYiIHI9IjEiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvY2lyY2xlPjwvZz48L3N2Zz4=" />
+                                            <h5 class="yb-box-circle-title">Référencement web</h5>
+                                        </div>
+                                    </div>
+                                    <div class="yb-bg-soft">
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDMzNC41IDMzNC41IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz4KPHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJNMzMyLjc5NywxMy42OTljLTEuNDg5LTEuMzA2LTMuNjA4LTEuNjA5LTUuNDA0LTAuNzc2TDIuODkzLDE2My42OTVjLTEuNzQ3LDAuODEyLTIuODcyLDIuNTU1LTIuODkzLDQuNDgxICBzMS4wNjcsMy42OTMsMi43OTcsNC41NDJsOTEuODMzLDQ1LjA2OGMxLjY4NCwwLjgyNywzLjY5MiwwLjY0LDUuMTk2LTAuNDg0bDg5LjI4Ny02Ni43MzRsLTcwLjA5NCw3Mi4xICBjLTEsMS4wMjktMS41MSwyLjQzOC0xLjQsMy44NjhsNi45NzksOTAuODg5YzAuMTU1LDIuMDE0LDEuNTA1LDMuNzM2LDMuNDI0LDQuMzY3YzAuNTEzLDAuMTY4LDEuMDQsMC4yNSwxLjU2MSwwLjI1ICBjMS40MjksMCwyLjgxOS0wLjYxMywzLjc4Ni0xLjczM2w0OC43NDItNTYuNDgybDYwLjI1NSwyOC43OWMxLjMwOCwwLjYyNSwyLjgyMiwwLjY1MSw0LjE1MSwwLjA3MyAgYzEuMzI5LTAuNTc5LDIuMzQxLTEuNzA1LDIuNzc1LTMuMDg3TDMzNC4yNywxOC45NTZDMzM0Ljg2NCwxNy4wNjYsMzM0LjI4NSwxNS4wMDUsMzMyLjc5NywxMy42OTl6IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                                            <h5 class="yb-box-circle-title">Emailing</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2NS45ODcgNDY1Ljk4NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMzcyLjczNSwyMzYuNTQ3Yy0yLjY1MS0zLjUzNS03LjY2NS00LjI1MS0xMS4yLTEuNmMtMS42OTgsMS4yNzQtMi44MjEsMy4xNy0zLjEyLDUuMjcybC00LjQ0LDMxLjEyICAgIGMtMC4xMDcsMC40LTAuMjQ3LDAuNzktMC40MTYsMS4xNjhjOC4xNTktMTAuODM0LDE0Ljc0NC0yMi43NjksMTkuNTYtMzUuNDQ4TDM3Mi43MzUsMjM2LjU0N3oiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTM0Ni4wNDcsMjc4LjIwM2MtMC4zNzcsMC0wLjc1NC0wLjAyNC0xLjEyOC0wLjA3MmwtNDcuNTItNi43OTJjLTQuMzc0LTAuNjI3LTcuNDExLTQuNjgtNi43ODQtOS4wNTQgICAgYzAtMC4wMDEsMC0wLjAwMSwwLTAuMDAybDQuNDQtMzEuMTJjMC42MTktNC4zNzUtMi40MjUtOC40MjMtNi44LTkuMDQyYy0yLjA5My0wLjI5Ni00LjIxOSwwLjI0OC01LjkxMiwxLjUxNGwtMjUuMTUyLDE4Ljg1NiAgICBjLTMuNTM1LDIuNjUxLTguNTQ5LDEuOTM1LTExLjItMS42djBsLTI4LjgtMzguNGMtMi42NTEtMy41MzUtMS45MzUtOC41NDksMS42LTExLjJsMjUuMTQ0LTE4Ljg1NiAgICBjMy41MzUtMi42NTEsNC4yNTEtNy42NjUsMS42LTExLjJjLTEuMjc0LTEuNjk4LTMuMTctMi44MjEtNS4yNzItMy4xMmwtMzEuMTItNC40NDhjLTQuMzc0LTAuNjIyLTcuNDE2LTQuNjczLTYuNzkzLTkuMDQ3ICAgIGMwLTAuMDAzLDAuMDAxLTAuMDA2LDAuMDAxLTAuMDA5bDYuNzkyLTQ3LjUxMmMwLjYyMi00LjM3NCw0LjY3My03LjQxNiw5LjA0Ny02Ljc5M2MwLjAwMywwLDAuMDA2LDAuMDAxLDAuMDA5LDAuMDAxbDMxLjEyLDQuNDQ4ICAgIGMzLjIwMSwwLjQ2NCw2LjM2NC0xLjA1OCw4LTMuODQ4YzEuNjk5LTIuNzczLDEuNTA4LTYuMzA3LTAuNDgtOC44OGwtMTguODQtMjUuMTM2Yy0yLjY1MS0zLjUzNS0xLjkzNS04LjU0OSwxLjYtMTEuMmw0LjUzNi0zLjQgICAgYy03LjM0OC0wLjM1NS0xNC43MTMtMC4xNTgtMjIuMDMyLDAuNTkyQzE0My4wODcsNTEuOTA1LDg2LjM0NywxMjMuMjc0LDk1LjM2OSwyMDIuMjljNC45MTUsNDMuMDQ1LDI4Ljk0OSw4MS41ODksNjUuNDM4LDEwNC45NDUgICAgYzEzLjMyMiw4LjI2LDIxLjUwNCwyMi43NSwyMS42OTYsMzguNDI0djMyLjMyOGMwLDEzLjI1NSwxMC43NDUsMjQsMjQsMjRoNjRjMTMuMjU1LDAsMjQtMTAuNzQ1LDI0LTI0di0zMS42NjQgICAgYzAuMjAzLTE2LjA0Miw4LjU1My0zMC44NzgsMjIuMTYtMzkuMzc2YzEyLjYxMi04LjE4MiwyMy44NzUtMTguMjc2LDMzLjM4NC0yOS45MiAgICBDMzQ4Ljg0MSwyNzcuNzY2LDM0Ny40NjEsMjc4LjE3MiwzNDYuMDQ3LDI3OC4yMDN6IE0yNDYuNTAzLDM3Ny45ODdoLTE2di0yNGgxNlYzNzcuOTg3eiBNMjMwLjUwMywzMzcuOTg3ICAgIGMtMC4wMDUtMjEuMTUyLTEzLjA0OC00MC4xMTItMzIuOC00Ny42OGMtNTcuNjA5LTIyLjUyNi04Ni4wNDktODcuNDg3LTYzLjUyMy0xNDUuMDk2YzguNzIyLTIyLjMwNywyNC4zNjYtNDEuMjMsNDQuNjM1LTUzLjk5MiAgICBsOC40ODgsMTMuNTM2Yy00NC44NzUsMjguMjM3LTU4LjM2Miw4Ny41MDUtMzAuMTI1LDEzMi4zOGMxMC45NCwxNy4zODYsMjcuMTY5LDMwLjgwNSw0Ni4zMDEsMzguMjg0ICAgIGMyNS45MjgsOS45MTcsNDMuMDQ0LDM0LjgwOCw0My4wMjQsNjIuNTY4SDIzMC41MDN6IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik0yMDYuNTAzLDQ0MS45ODd2OGMwLDguODM3LDcuMTYzLDE2LDE2LDE2aDMyYzguODM3LDAsMTYtNy4xNjMsMTYtMTZ2LThIMjA2LjUwM3oiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTE1Ni40ODcsMzEzLjk4N2MtNC43NC0zLjA3My05LjMwNS02LjQwOS0xMy42NzItOS45OTJjLTEyLjA3NywyMy41MS00MC45MjUsMzIuNzc4LTY0LjQzNSwyMC43MDIgICAgYy0xNi4wMDItOC4yMi0yNi4wNDItMjQuNzItMjUuOTg5LTQyLjcxYzAuMDM3LTI0LjE4NywxOC4wNS00NC41NzUsNDIuMDQ4LTQ3LjU5MmMtMi45MzYtOC44My01LjA1Ny0xNy45MTEtNi4zMzYtMjcuMTI4ICAgIGwtMS40LDYuNjU2Yy0xLjgxOCw4LjY0Ny0xMC4zMDMsMTQuMTgzLTE4Ljk1LDEyLjM2NWMtMi4wNzEtMC40MzUtNC4wMzUtMS4yNzctNS43NzgtMi40NzdsLTE2LjY0LTExLjQyNGwtMTQuNTc2LDE0LjU0NCAgICBsMTEuNDU2LDE2LjY1NmM1LjAxNCw3LjI3NiwzLjE4LDE3LjI0LTQuMDk2LDIyLjI1NGMtMS43NDUsMS4yMDItMy43MTEsMi4wNDYtNS43ODQsMi40ODJsLTE5Ljk0NCw0LjJ2MTkuMDA4bDE5Ljk0NCw0LjIgICAgYzguNjQ3LDEuODIxLDE0LjE4MSwxMC4zMDcsMTIuMzYsMTguOTU0Yy0wLjQzNywyLjA3Ni0xLjI4Myw0LjA0NC0yLjQ4OCw1Ljc5bC0xMS40NDgsMTYuNTY4bDE0LjU3NiwxNC41NDRsMTYuNjI0LTExLjQ1NiAgICBjNy4yNzYtNS4wMTQsMTcuMjQtMy4xOCwyMi4yNTQsNC4wOTZjMS4yMDIsMS43NDUsMi4wNDYsMy43MTEsMi40ODIsNS43ODRsNC4xOTIsMTkuOTc2aDE5LjAxNmw0LjE5Mi0xOS45NDQgICAgYzEuODItOC42NDcsMTAuMzA1LTE0LjE4MiwxOC45NTItMTIuMzYyYzIuMDczLDAuNDM2LDQuMDM5LDEuMjgsNS43ODQsMi40ODJsMTYuNjE2LDExLjQyNGwxNy4xNi0xNy4xNiAgICBDMTY5LjczLDMyNS45NzEsMTY0LjA0LDMxOC43NTYsMTU2LjQ4NywzMTMuOTg3eiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cmVjdCB4PSIyMDYuNTAzIiB5PSI0MDkuOTg3IiB3aWR0aD0iNjQiIGhlaWdodD0iMTYiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcmVjdD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQzOC4yNTUsMTM3LjkxNWMtMTMuMTIxLTEuODc2LTIyLjIzNy0xNC4wMzUtMjAuMzYxLTI3LjE1NmMwLjkwMS02LjMwMSw0LjI2OC0xMS45ODYsOS4zNjEtMTUuODA0bDE4Ljc0NC0xNC4wNjQgICAgbC0xOS4yLTI1LjZsLTE4Ljc0NCwxNC4wNTZjLTEwLjYwMiw3Ljk1Ni0yNS42NDYsNS44MS0zMy42MDEtNC43OTFjLTMuODE1LTUuMDg0LTUuNDU4LTExLjQ3NS00LjU2Ny0xNy43NjlsMy4zMTItMjMuMiAgICBsLTMxLjY3Mi00LjUybC0zLjMxMiwyMy4yYy0xLjg3NywxMy4xMjEtMTQuMDM1LDIyLjIzNy0yNy4xNTYsMjAuMzYxYy02LjMwMS0wLjkwMS0xMS45ODYtNC4yNjgtMTUuODA0LTkuMzYxbC0xNC4wNjQtMTguNzc2ICAgIGwtMjUuNiwxOS4ybDE0LjA1NiwxOC43NDRjNy45NTQsMTAuNjAzLDUuODA3LDI1LjY0Ni00Ljc5NiwzMy42MDFjLTUuMDk1LDMuODIyLTExLjQ5OSw1LjQ2Mi0xNy44MDQsNC41NTlsLTIzLjItMy4zMTIgICAgbC00LjU0NCwzMS42OGwyMy4yLDMuMzEyYzEzLjEyMSwxLjg3NywyMi4yMzcsMTQuMDM1LDIwLjM2MSwyNy4xNTZjLTAuOTAxLDYuMzAxLTQuMjY4LDExLjk4Ni05LjM2MSwxNS44MDRsLTE4LjczNiwxNC4wNjQgICAgbDE5LjIsMjUuNmwxOC43NDQtMTQuMDU2YzEwLjYwMy03Ljk1NCwyNS42NDYtNS44MDcsMzMuNjAxLDQuNzk2YzMuODIyLDUuMDk1LDUuNDYyLDExLjUsNC41NTksMTcuODA0bC0zLjMxMiwyMy4ybDMxLjc0NCw0LjU0NCAgICBsMy4zMTItMjMuMmMxLjg3Ny0xMy4xMjEsMTQuMDM1LTIyLjIzNywyNy4xNTYtMjAuMzYxYzYuMzAxLDAuOTAxLDExLjk4Niw0LjI2OCwxNS44MDQsOS4zNjFsMTQuMDY0LDE4LjczNmwyNS42LTE5LjIgICAgbC0xNC4xMDQtMTguNzc2Yy03Ljk1MS0xMC42MDUtNS44LTI1LjY0OCw0LjgwNS0zMy41OTljNS4wODQtMy44MTIsMTEuNDcyLTUuNDUyLDE3Ljc2My00LjU2MWwyMy4yLDMuMzEybDQuNTItMzEuNjcyICAgIEw0MzguMjU1LDEzNy45MTV6IE0zNDAuMzkxLDE4OC4wOTljLTI2LjUxLDAtNDgtMjEuNDktNDgtNDhzMjEuNDktNDgsNDgtNDhjMjYuNTEsMCw0OCwyMS40OSw0OCw0OCAgICBDMzg4LjM2LDE2Ni41OTYsMzY2Ljg4OCwxODguMDY4LDM0MC4zOTEsMTg4LjA5OXoiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHJlY3QgeD0iMzkwLjUwMyIgeT0iMjk3Ljk4NyIgd2lkdGg9IjU2IiBoZWlnaHQ9IjE2IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3JlY3Q+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxyZWN0IHg9IjM5OC41MDQiIHk9IjMzNC43NSIgdHJhbnNmb3JtPSJtYXRyaXgoMC42NDAxIC0wLjc2ODMgMC43NjgzIDAuNjQwMSAtMTM0Ljg4NzYgNDQ0LjAyNTQpIiB3aWR0aD0iMTYiIGhlaWdodD0iNjIuNDgiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcmVjdD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHJlY3QgeD0iMzQyLjUwMyIgeT0iMzYxLjk4NyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjU2IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3JlY3Q+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxyZWN0IHg9IjUuNTE5IiB5PSIxMjkuOTg3IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjk3MDEgLTAuMjQyNSAwLjI0MjUgMC45NzAxIC0zMi4zMTU1IDEzLjQ1NzcpIiB3aWR0aD0iNjUuOTY4IiBoZWlnaHQ9IjE1Ljk5MiIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9yZWN0PgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cmVjdCB4PSI0Mi41MDIiIHk9IjM1LjU4NSIgdHJhbnNmb3JtPSJtYXRyaXgoMC41ODEyIC0wLjgxMzcgMC44MTM3IDAuNTgxMiAtMzUuODA4OCA3MC40MDIxKSIgd2lkdGg9IjE1Ljk5MiIgaGVpZ2h0PSI2OC44MTYiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcmVjdD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHJlY3QgeD0iOTQuMzI5IiB5PSIwLjk1MiIgdHJhbnNmb3JtPSJtYXRyaXgoMC45Njg4IC0wLjI0NzcgMC4yNDc3IDAuOTY4OCAtNS4yMjc3IDI2LjQwMSkiIHdpZHRoPSIxNiIgaGVpZ2h0PSI2Ni4wNTYiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcmVjdD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+"/>
+                                            <h5 class="yb-box-circle-title">Gestion de projet</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTI1NiwwQzExNC41MDgsMCwwLDExNC40OTcsMCwyNTZjMCwxNDEuNDkyLDExNC40OTcsMjU2LDI1NiwyNTZjMTQxLjQ5MiwwLDI1Ni0xMTQuNDk3LDI1Ni0yNTYgICAgQzUxMiwxMTQuNTA4LDM5Ny41MDMsMCwyNTYsMHogTTE1Ni45NDYsNTIuNzUzYy03Ljc0NywyMS4wOTktMTQuMjUsNDIuNTQ3LTE5LjQ5OSw2NC4yOTUgICAgYy0xNS4zNDEtNC42NjEtMzAuNDMyLTEwLjI1LTQ1LjI0My0xNi43NjJDMTEwLjk1OCw4MC41ODMsMTMyLjgxMiw2NC41NCwxNTYuOTQ2LDUyLjc1M3ogTTcyLjMzOCwxMjQuMjQgICAgYzE5LjE3MSw4Ljg3OCwzOC43OTEsMTYuMyw1OC44MDIsMjIuMjUzYy01LjgwNiwzMC45OTMtOS4xMjYsNjIuNTM4LTkuOTE0LDk0LjUwN0gzMC41MDIgICAgQzMzLjI2NSwxOTguNTU5LDQ3LjcyOCwxNTguMzksNzIuMzM4LDEyNC4yNHogTTcyLjMzOCwzODcuNzZDNDcuNzI4LDM1My42MSwzMy4yNjUsMzEzLjQ0MSwzMC41MDIsMjcxaDkwLjcyNCAgICBjMC43ODgsMzEuOTY5LDQuMTA4LDYzLjUxNCw5LjkxNCw5NC41MDdDMTExLjEyOSwzNzEuNDYsOTEuNTEsMzc4Ljg4Miw3Mi4zMzgsMzg3Ljc2eiBNOTIuMjA0LDQxMS43MTUgICAgYzE0LjgxMS02LjUxMywyOS45MDEtMTIuMTAyLDQ1LjI0My0xNi43NjJjNS4yNSwyMS43NDgsMTEuNzUyLDQzLjE5NiwxOS40OTksNjQuMjk1ICAgIEMxMzIuODI0LDQ0Ny40NjcsMTEwLjk2OCw0MzEuNDI3LDkyLjIwNCw0MTEuNzE1eiBNMjQxLDQ4MS40OThjLTE1Ljc1NC0xLjAyNS0zMS4xOTctMy42NTUtNDYuMTM1LTcuODI1ICAgIGMtMTEuODY1LTI4LjEyLTIxLjMzNS01Ni45NTItMjguMzk4LTg2LjM2M2MyNC4zMTgtNS40MzcsNDkuMTk5LTguNjE2LDc0LjUzMy05LjUxNVY0ODEuNDk4eiBNMjQxLDM0Ny43NzcgICAgYy0yNy40NDgsMC45MDctNTQuNDA1LDQuMzA3LTgwLjc1MSwxMC4xNzVjLTUuMjM0LTI4LjUyOS04LjI1LTU3LjU1LTkuMDEzLTg2Ljk1MkgyNDFWMzQ3Ljc3N3ogTTI0MSwyNDFoLTg5Ljc2NCAgICBjMC43NjMtMjkuNDAyLDMuNzc5LTU4LjQyMyw5LjAxMy04Ni45NTJjMjYuMzQ2LDUuODY4LDUzLjMwMyw5LjI2OCw4MC43NTEsMTAuMTc1VjI0MXogTTI0MSwxMzQuMjA1ICAgIGMtMjUuMzM0LTAuODk5LTUwLjIxNS00LjA3OC03NC41MzMtOS41MTVDMTczLjUzLDk1LjI3OSwxODMsNjYuNDQ3LDE5NC44NjUsMzguMzI3YzE0LjkzOC00LjE3LDMwLjM4MS02LjgsNDYuMTM1LTcuODI1VjEzNC4yMDV6ICAgICBNNDM5LjY2MiwxMjQuMjRjMjQuNjEsMzQuMTUsMzkuMDczLDc0LjMxOSw0MS44MzYsMTE2Ljc2aC05MC43MjRjLTAuNzg4LTMxLjk2OS00LjEwOC02My41MTQtOS45MTQtOTQuNTA3ICAgIEM0MDAuODcxLDE0MC41NCw0MjAuNDksMTMzLjExOCw0MzkuNjYyLDEyNC4yNHogTTQxOS43OTYsMTAwLjI4NWMtMTQuODExLDYuNTEzLTI5LjkwMSwxMi4xMDItNDUuMjQzLDE2Ljc2MiAgICBjLTUuMjUtMjEuNzQ4LTExLjc1Mi00My4xOTYtMTkuNDk5LTY0LjI5NUMzNzkuMTc2LDY0LjUzMyw0MDEuMDMyLDgwLjU3Myw0MTkuNzk2LDEwMC4yODV6IE0yNzEsMzAuNTAyICAgIGMxNS43NTQsMS4wMjUsMzEuMTk3LDMuNjU1LDQ2LjEzNSw3LjgyNUMzMjksNjYuNDQ3LDMzOC40Nyw5NS4yNzksMzQ1LjUzMywxMjQuNjljLTI0LjMxOCw1LjQzNy00OS4xOTksOC42MTYtNzQuNTMzLDkuNTE1ICAgIFYzMC41MDJ6IE0yNzEsMTY0LjIyM2MyNy40NDgtMC45MDcsNTQuNDA1LTQuMzA3LDgwLjc1MS0xMC4xNzVjNS4yMzQsMjguNTI5LDguMjUsNTcuNTUsOS4wMTMsODYuOTUySDI3MVYxNjQuMjIzeiAgICAgTTMxNy4xMzQsNDczLjY3MmMtMTQuOTM3LDQuMTcxLTMwLjM4LDYuODAxLTQ2LjEzNCw3LjgyNlYzNzcuNzk1YzI1LjMzNCwwLjg5OSw1MC4yMTUsNC4wNzgsNzQuNTMzLDkuNTE1ICAgIEMzMzguNDY5LDQxNi43MjEsMzI5LDQ0NS41NTMsMzE3LjEzNCw0NzMuNjcyeiBNMjcxLDM0Ny43NzdWMjcxaDg5Ljc2NGMtMC43NjMsMjkuNDAyLTMuNzc5LDU4LjQyMy05LjAxMyw4Ni45NTIgICAgQzMyNS40MDUsMzUyLjA4NCwyOTguNDQ4LDM0OC42ODQsMjcxLDM0Ny43Nzd6IE0zNTUuMDU0LDQ1OS4yNDdjNy43NDctMjEuMDk5LDE0LjI1LTQyLjU0NywxOS40OTktNjQuMjk1ICAgIGMxNS4zNDEsNC42NjEsMzAuNDMyLDEwLjI1LDQ1LjI0MywxNi43NjJDNDAxLjA0Miw0MzEuNDE3LDM3OS4xODgsNDQ3LjQ2LDM1NS4wNTQsNDU5LjI0N3ogTTQzOS42NjIsMzg3Ljc2ICAgIGMtMTkuMTcxLTguODc4LTM4Ljc5MS0xNi4zLTU4LjgwMi0yMi4yNTNjNS44MDYtMzAuOTkzLDkuMTI2LTYyLjUzOCw5LjkxNC05NC41MDdoOTAuNzI0ICAgIEM0NzguNzM1LDMxMy40NDEsNDY0LjI3MiwzNTMuNjEsNDM5LjY2MiwzODcuNzZ6IiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                                            <h5 class="yb-box-circle-title">HTML/CSS</h5>
+                                        </div>
+                                    </div>
+                                    <div class="yb-bg-soft">
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xMiAwYy02LjYxNSAwLTEyIDUuMzgxLTEyIDEyIDAgNi42MTUgNS4zODUgMTIgMTIgMTJzMTItNS4zODUgMTItMTJjMC02LjYyLTUuMzg1LTEyLTEyLTEyem0tMTAuNzkgMTEuOTk5YzAtMS41NjMuMzMzLTMuMDQ4LjkzNC00LjM4OWw1LjE0OCAxNC4xYy0zLjYwMS0xLjc1MS02LjA4Mi01LjQ0Mi02LjA4Mi05LjcxMXptMTAuNzkgMTAuNzkxYy0xLjA2IDAtMi4wODEtLjE1NS0zLjA0OC0uNDQxbDMuMjM3LTkuNDA2IDMuMzE1IDkuMDg3Yy4wMjQuMDU0LjA0OS4xMDEuMDc3LjE1LTEuMTE4LjM5Mi0yLjMyMy42MS0zLjU4MS42MXptMS40ODUtMTUuODQ1di0uMDAxYy42NDgtLjAzNCAxLjIzMy0uMTAxIDEuMjMzLS4xMDEuNTgxLS4wNjguNTEzLS45MjQtLjA2OC0uODkxIDAgMC0xLjc0Ny4xMzUtMi44NzQuMTM1LTEuMDYgMC0yLjg0MS0uMTM1LTIuODQxLS4xMzUtLjU4LS4wMzQtLjY0Ny44NTctLjA2Ny44OTEgMCAwIC41NTEuMDY4IDEuMTMyLjEwMWwxLjY3OSA0LjYwNi0yLjM2MSA3LjA3OS0zLjkyOC0xMS42ODVjLjY0OS0uMDM0IDEuMjM0LS4xMDEgMS4yMzQtLjEwMS41ODEtLjA2OC41MTMtLjkyNC0uMDY4LS44OTEgMCAwLTEuNzQ3LjEzNS0yLjg3NC4xMzUtLjIwMyAwLS40NDEtLjAwNS0uNjk3LS4wMTQgMS45MzEtMi45MjggNS4yNDUtNC44NjMgOS4wMTUtNC44NjMgMi44MDcgMCA1LjM2NiAxLjA3NSA3LjI4NyAyLjgzLS4wNDktLjAwNS0uMDkyLS4wMDktLjE0LS4wMDktMS4wNiAwLTEuODEuOTI0LTEuODEgMS45MTYgMCAuODkuNTEzIDEuNjQgMS4wNiAyLjUzMS40MTEuNzE2Ljg5MSAxLjY0Ljg5MSAyLjk3NiAwIC45MjQtLjM1MyAxLjk5My0uODIzIDMuNDg5bC0xLjA3NSAzLjU5NXptNy45ODUtLjEyMmMuODQyIDEuNTM5IDEuMzIxIDMuMyAxLjMyMSA1LjE3OCAwIDMuOTgyLTIuMTU4IDcuNDU2LTUuMzY2IDkuMzI0bC0uMDAxLS4wMDEgMy4yOTUtOS41MjhjLjYxNC0xLjUzOS44MjMtMi43NjcuODIzLTMuODY2IDAtLjM5Ni0uMDI0LS43NjQtLjA3Mi0xLjEwN3oiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+" />
+                                            <h5 class="yb-box-circle-title">Wordpress</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTI1NS45NjgsNS4zMjlDMTE0LjYyNCw1LjMyOSwwLDEyMC40MDEsMCwyNjIuMzUzYzAsMTEzLjUzNiw3My4zNDQsMjA5Ljg1NiwxNzUuMTA0LDI0My44NzIgICAgYzEyLjgsMi4zNjgsMTcuNDcyLTUuNTY4LDE3LjQ3Mi0xMi4zODRjMC02LjExMi0wLjIyNC0yMi4yNzItMC4zNTItNDMuNzEyYy03MS4yLDE1LjUyLTg2LjI0LTM0LjQ2NC04Ni4yNC0zNC40NjQgICAgYy0xMS42MTYtMjkuNjk2LTI4LjQxNi0zNy42LTI4LjQxNi0zNy42Yy0yMy4yNjQtMTUuOTM2LDEuNzI4LTE1LjYxNiwxLjcyOC0xNS42MTZjMjUuNjk2LDEuODI0LDM5LjIsMjYuNDk2LDM5LjIsMjYuNDk2ICAgIGMyMi44NDgsMzkuMjY0LDU5LjkzNiwyNy45MzYsNzQuNTI4LDIxLjM0NGMyLjMwNC0xNi42MDgsOC45MjgtMjcuOTM2LDE2LjI1Ni0zNC4zNjggICAgYy01Ni44MzItNi40OTYtMTE2LjYwOC0yOC41NDQtMTE2LjYwOC0xMjcuMDA4YzAtMjguMDY0LDkuOTg0LTUxLjAwOCwyNi4zNjgtNjguOTkyYy0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQsMi40OTYtNjggICAgYzAsMCwyMS41MDQtNi45MTIsNzAuNCwyNi4zMzZjMjAuNDE2LTUuNjk2LDQyLjMwNC04LjU0NCw2NC4wOTYtOC42NGMyMS43MjgsMC4xMjgsNDMuNjQ4LDIuOTQ0LDY0LjA5Niw4LjY3MiAgICBjNDguODY0LTMzLjI0OCw3MC4zMzYtMjYuMzM2LDcwLjMzNi0yNi4zMzZjMTMuOTUyLDM1LjM5Miw1LjE4NCw2MS41MDQsMi41Niw2OGMxNi40MTYsMTcuOTg0LDI2LjMwNCw0MC45MjgsMjYuMzA0LDY4Ljk5MiAgICBjMCw5OC43Mi01OS44NCwxMjAuNDQ4LTExNi44NjQsMTI2LjgxNmM5LjE4NCw3LjkzNiwxNy4zNzYsMjMuNjE2LDE3LjM3Niw0Ny41ODRjMCwzNC4zNjgtMC4zMiw2Mi4wOC0wLjMyLDcwLjQ5NiAgICBjMCw2Ljg4LDQuNjA4LDE0Ljg4LDE3LjYsMTIuMzUyQzQzOC43Miw0NzIuMTQ1LDUxMiwzNzUuODU3LDUxMiwyNjIuMzUzQzUxMiwxMjAuNDAxLDM5Ny4zNzYsNS4zMjksMjU1Ljk2OCw1LjMyOXoiIGZpbGw9IiMwMDZkYjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+                                            <h5 class="yb-box-circle-title">Git</h5>
+                                        </div>
+                                    </div>
+                                    <div class="yb-bg-soft">
+                                        <div class="yb-box-circle">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTExNiAyOTZjMC0zMC4zMjgxMjUgMjQuNjcxODc1LTU1IDU1LTU1aDE3MGMxMy43ODUxNTYgMCAyNS0xMS4yMTQ4NDQgMjUtMjV2LTE0MWMwLTQxLjM1NTQ2OS0zMy42NDQ1MzEtNzUtNzUtNzVoLTcwYy00MS4zNTU0NjkgMC03NSAzMy42NDQ1MzEtNzUgNzV2NDFoMTEwYzguMjg1MTU2IDAgMTUgNi43MTQ4NDQgMTUgMTVzLTYuNzE0ODQ0IDE1LTE1IDE1aC0xODFjLTQxLjM1NTQ2OSAwLTc1IDMzLjY0NDUzMS03NSA3NXY3MGMwIDQxLjM1NTQ2OSAzMy42NDQ1MzEgNzUgNzUgNzVoNDF6bTEwNS0yMjBjLTguMjg1MTU2IDAtMTUtNi43MTQ4NDQtMTUtMTVzNi43MTQ4NDQtMTUgMTUtMTUgMTUgNi43MTQ4NDQgMTUgMTUtNi43MTQ4NDQgMTUtMTUgMTV6bTAgMCIgZmlsbD0iIzAwNmRiNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTQzNyAxNDZoLTQxdjcwYzAgMzAuMzI4MTI1LTI0LjY3MTg3NSA1NS01NSA1NWgtMTcwYy0xMy43ODUxNTYgMC0yNSAxMS4yMTQ4NDQtMjUgMjV2MTQxYzAgNDEuMzU1NDY5IDMzLjY0NDUzMSA3NSA3NSA3NWg3MGM0MS4zNTU0NjkgMCA3NS0zMy42NDQ1MzEgNzUtNzV2LTQxaC0xMTBjLTguMjg1MTU2IDAtMTUtNi43MTQ4NDQtMTUtMTVzNi43MTQ4NDQtMTUgMTUtMTVoMTgxYzQxLjM1NTQ2OSAwIDc1LTMzLjY0NDUzMSA3NS03NXYtNzBjMC00MS4zNTU0NjktMzMuNjQ0NTMxLTc1LTc1LTc1em0tMTQ2IDI5MGM4LjI4NTE1NiAwIDE1IDYuNzE0ODQ0IDE1IDE1cy02LjcxNDg0NCAxNS0xNSAxNS0xNS02LjcxNDg0NC0xNS0xNSA2LjcxNDg0NC0xNSAxNS0xNXptMCAwIiBmaWxsPSIjMDA2ZGI2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
+                                            <h5 class="yb-box-circle-title">Python</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-uk-grid class="uk-child-width-1-2">
+                                    <div>
+                                        <h4 class="yb-section-title">Soft Skills</h4>
+                                        <ul class="uk-list uk-list-large  uk-list-divider">
+                                            <li>
+                                                <div class="yb-resume-skill-item">
+                                                    <h5>
+                                                        Curiosité <small
+                                                            class="uk-float-right uk-text-bold uk-visible@s">100%</small>
+                                                    </h5>
+                                                    <progress class="uk-progress" value="100" max="100"></progress>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="yb-resume-skill-item">
+                                                    <h5>
+                                                        Proactivité <small
+                                                            class="uk-float-right uk-text-bold uk-visible@s">100%</small>
+                                                    </h5>
+                                                    <progress class="uk-progress" value="100" max="100"></progress>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="yb-resume-skill-item">
+                                                    <h5>
+                                                        Organisation<small
+                                                            class="uk-float-right uk-text-bold uk-visible@s">90%</small>
+                                                    </h5>
+                                                    <progress class="uk-progress" value="90" max="100"></progress>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="yb-resume-skill-item">
+                                                    <h5>
+                                                        Travail d'équipe <small
+                                                            class="uk-float-right uk-text-bold uk-visible@s">90%</small>
+                                                    </h5>
+                                                    <progress class="uk-progress" value="90" max="100"></progress>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="yb-section-title">Langues </h4>
+                                        <ul class="uk-list uk-list-large uk-list-divider">
+                                            <li>
+                                                <div class="yb-resume-skill-item">
+                                                    <h5>
+                                                        Français <small
+                                                            class="uk-float-right uk-text-bold uk-visible@s">100%</small>
+                                                    </h5>
+                                                    <progress class="uk-progress" value="100" max="100"></progress>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="yb-resume-skill-item">
+                                                    <h5>
+                                                        Anglais <small class="uk-float-right uk-text-bold uk-visible@s">B2+</small>
+                                                    </h5>
+                                                    <progress class="uk-progress" value="75" max="100"></progress>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yb-section yb-section-padding uk-background-cover uk-background-fixed "
+                 data-uk-parallax="bgy: -200" data-src="{{ url_for('static', filename='src/img/bg/bg2.jpg') }}"
+                 data-uk-img>
+                <div class="yb-overlay-primary uk-position-cover"></div>
+                <div class="uk-container uk-text-center uk-position-relative">
+                    <div data-uk-grid class="uk-grid-small  uk-flex-center">
+                        <div>
+                            <a href="{{ url_for('static', filename='CV.pdf') }}"
+                               class=" yb-btn uk-button uk-button-primary uk-button-large">Télécharger
+                                mon CV</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- end resume section -->
+        <!-- portfolio section -->
+        <section class="yb-section  uk-overflow-hidden" id="portfolio">
+            <div class="yb-section-point-wrapper">
+                <div class="uk-container">
+                    <div class="yb-section-point">
+                        <sup>04</sup>
+                        <span>Portfolio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-container ">
+                <div data-uk-grid class="uk-grid-divider">
+                    <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom yb-section-padding-top"
+                         id="portfolio-nav-wrapper">
+                        <div data-uk-sticky="bottom: #portfolio-nav-wrapper; offset: 100; media: 650">
+                            <ul class="yb-nav-left uk-tab-left uk-tab"
+                                data-uk-scrollspy-nav="closest: li; scroll: false; offset: 120">
+                                <li class="uk-active">
+                                    <a href="#myworks" class="yb-inner-link" data-offset="120">
+                                        <span data-uk-icon="minus"></span>
+                                        Mes réalisations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#client" class="yb-inner-link" data-offset="120">
+                                        <span data-uk-icon="minus"></span>
+                                        Clients
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-expand@s yb-section-padding-top">
+                        <div>
+                            <h2 class="yb-section-title uk-heading-line " id="myworks"><span>Mes réalisations</span>
+                            </h2>
+                            <div data-uk-filter="target: .js-filter" class="yb-margin-top-1 yb-margin-bottom-1">
+                                <ul class="yb-nav-filter uk-subnav uk-subnav-pill ">
+                                    <li><a data-uk-filter-control>Toutes</a></li>
+                                    <li><a data-uk-filter-control=".data-web">Sites web</a></li>
+                                    <li><a data-uk-filter-control=".data-email">Emailing</a></li>
+                                    <li><a data-uk-filter-control=".data-ads">Ads</a></li>
+                                    <li><a data-uk-filter-control=".data-graphic">Graphique</a></li>
+                                </ul>
+                                <ul class="js-filter uk-child-width-1-2 uk-grid-small" data-uk-grid
+                                    data-uk-lightbox="animation: fade;  toggle: .yb-lightbox">
+                                    <li class="data-web ">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/website/01.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/website/01.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Toque & gourmandise">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                        <!--<a href="project/project-details-01.html" class="uk-transition-slide-right show-portfolio">
+                                                          <span data-uk-icon="icon:link; ratio:1.2"></span>
+                                                        </a>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/website/01.png') }}"
+                                               class="yb-lightbox">
+                                                <div class="yb-work-item-title">
+                                                    <h5>Toque & Gourmandise</h5>
+                                                    <span>Site web</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-brand data-web">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/website/02.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/website/02.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Caption Title Brand, Web">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                        <a href="https://amelevents.fr/"
+                                                           class="uk-transition-slide-right">
+                                                            <span data-uk-icon="icon:link; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="https://amelevents.fr" class="">
+                                                <div class="yb-work-item-title">
+                                                    <h5>AmelEvents</h5>
+                                                    <span>Site web</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-web">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/website/03.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/website/03.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="BDE L'ÉCOLE LDLC">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                        <a href="https://bde-lecole-ldlc.com/"
+                                                           class="uk-transition-slide-right">
+                                                            <span data-uk-icon="icon:link; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="https://bde-lecole-ldlc.com/" class="">
+                                                <div class="yb-work-item-title">
+                                                    <h5>BDE L'ÉCOLE LDLC</h5>
+                                                    <span>Site web</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-email">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/emailing/01-b.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/emailing/01.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Emailing Boutique LDLC">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/emailing/01.png') }}"
+                                               class="yb-lightbox">
+                                                <div class="yb-work-item-title">
+                                                    <h5>LDLC.COM</h5>
+                                                    <span>Emailing</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-ads">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/work/ads/01.jpg') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/ads/01.jpg') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/ads/01.jpg') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Campagne ads nationale">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/ads/01.jpg') }}"
+                                               class="yb-lightbox">
+                                                <div class="yb-work-item-title">
+                                                    <h5>LDLC.COM</h5>
+                                                    <span>Ads</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-ads">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/work/ads/02.jpg') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/ads/02.jpg') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/ads/02.jpg') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Campagne local d'ouverture">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/ads/02.jpg') }}"
+                                               class="yb-lightbox">
+                                                <div class="yb-work-item-title">
+                                                    <h5>LDLC Le Havre</h5>
+                                                    <span>Ads</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-graphic">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/graphic/01.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/graphic/01.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Guide de visite de Lyon">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/graphic/01.png') }}"
+                                               class="yb-lightbox uk-transition-slide-left">
+                                                <div class="yb-work-item-title">
+                                                    <h5>Le pic vert lyonnais</h5>
+                                                    <span>Graphic</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-graphic">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/graphic/02.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/graphic/02.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Pause ta pêche : projet E-commerce">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/graphic/02.png') }}"
+                                               class="yb-lightbox uk-transition-slide-left">
+                                                <div class="yb-work-item-title">
+                                                    <h5>Pause ta pêche</h5>
+                                                    <span>Graphic</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-graphic">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/graphic/03.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/graphic/03.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Projet produit : SetUP">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/graphic/03.png') }}"
+                                               class="yb-lightbox uk-transition-slide-left">
+                                                <div class="yb-work-item-title">
+                                                    <h5>SETUP</h5>
+                                                    <span>Graphic</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-graphic">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/graphic/04.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/graphic/04.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Projet BeInfluent : TechXpliquer">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                        <a href="https://techxpliquer.fr/"
+                                                           class="uk-transition-slide-right">
+                                                            <span data-uk-icon="icon:link; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/graphic/04.png') }}"
+                                               class="yb-lightbox uk-transition-slide-left">
+                                                <div class="yb-work-item-title">
+                                                    <h5>TechXpliquer</h5>
+                                                    <span>Graphic</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-graphic">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/graphic/05.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/graphic/05.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Foodtruck Today : Trouver votre foodtruck à côté de votre lieu de travail">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                        <a href="https://foodtrucktoday.fr/"
+                                                           class="uk-transition-slide-right">
+                                                            <span data-uk-icon="icon:link; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/graphic/05.png') }}"
+                                               class="yb-lightbox uk-transition-slide-left">
+                                                <div class="yb-work-item-title">
+                                                    <h5>Foodtruck Today</h5>
+                                                    <span>Graphic</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="data-graphic">
+                                        <div class="yb-work-item uk-transition-toggle">
+                                            <div class="yb-work-item-img-wrap">
+                                                <div class="yb-work-item-img">
+                                                    <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                                         width="383" height="574"
+                                                         data-src="{{ url_for('static', filename='src/img/work/graphic/06.png') }}"
+                                                         class="uk-transition-scale-up uk-transition-opaque lazyload"
+                                                         alt=""
+                                                         data-uk-img/>
+                                                </div>
+                                                <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
+                                                    <div>
+                                                        <a href="{{ url_for('static', filename='src/img/work/graphic/06.png') }}"
+                                                           class="yb-lightbox uk-transition-slide-left"
+                                                           data-caption="Foodtruck Today : Trouver votre foodtruck à côté de votre lieu de travail">
+                                                            <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                                                        </a>
+                                                        <a href="https://foodtrucktoday.fr/"
+                                                           class="uk-transition-slide-right">
+                                                            <span data-uk-icon="icon:link; ratio:1.2"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="{{ url_for('static', filename='src/img/work/graphic/06.png') }}"
+                                               class="yb-lightbox uk-transition-slide-left">
+                                                <div class="yb-work-item-title">
+                                                    <h5>Foodtruck Today</h5>
+                                                    <span>Graphic</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div id="show-portofolio-details" class="uk-modal-full" data-uk-modal>
+                                    <div class="uk-modal-dialog ">
+                                        <button class="uk-modal-close-full uk-close-large" type="button"
+                                                data-uk-close></button>
+                                        <div id="portofolio-details" data-uk-height-viewport
+                                             class="uk-animation-toggle uk-overflow-hidden">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="yb-section-title uk-heading-line " id="client"><span>Clients</span></h2>
+                            <div class="yb-margin-top-1 yb-margin-bottom-2">
+                                <div data-uk-grid class="uk-child-width-1-6@m uk-child-width-1-3">
+                                    <div>
+                                        <div class="yb-client-item">
+                                            <img src="{{ url_for('static', filename='src/img/empty.png') }}" width="300"
+                                                 height="300"
+                                                 data-src="{{ url_for('static', filename='src/img/client/amconseil.png') }}"
+                                                 alt=""
+                                                 class="uk-border-rounded lazyload" data-uk-img>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-client-item">
+                                            <img src="{{ url_for('static', filename='src/img/empty.png') }}" width="300"
+                                                 height="300"
+                                                 data-src="{{ url_for('static', filename='src/img/client/auberge.png') }}"
+                                                 alt="" class="uk-border-rounded lazyload"
+                                                 data-uk-img>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-client-item">
+                                            <img src="{{ url_for('static', filename='src/img/empty.png') }}" width="300"
+                                                 height="300"
+                                                 data-src="{{ url_for('static', filename='src/img/client/amelevents.png') }}"
+                                                 alt=""
+                                                 class="uk-border-rounded lazyload" data-uk-img>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-client-item">
+                                            <img src="{{ url_for('static', filename='src/img/empty.png') }}" width="300"
+                                                 height="300"
+                                                 data-src="{{ url_for('static', filename='src/img/client/colibri.png') }}"
+                                                 alt="" class="uk-border-rounded lazyload"
+                                                 data-uk-img>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-client-item">
+                                            <img src="{{ url_for('static', filename='src/img/empty.png') }}" width="300"
+                                                 height="300"
+                                                 data-src="{{ url_for('static', filename='src/img/client/toque.png') }}"
+                                                 alt="" class="uk-border-rounded lazyload"
+                                                 data-uk-img>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="yb-client-item">
+                                            <img src="{{ url_for('static', filename='src/img/empty.png') }}" width="300"
+                                                 height="300"
+                                                 data-src="{{ url_for('static', filename='src/img/client/tablee.png') }}"
+                                                 alt="" class="uk-border-rounded lazyload"
+                                                 data-uk-img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end portfolio section -->
+        <!-- contact section -->
+        <section class="yb-section yb-border-top" id="contact">
+            <div class="yb-section-point-wrapper">
+                <div class="uk-container">
+                    <div class="yb-section-point ">
+                        <sup>05</sup>
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-container">
+                <div data-uk-grid class=" uk-grid-divider">
+                    <div class="yb-section-padding yb-contact-left uk-width-3-4@m">
+                        <div>
+                            <h2 class="yb-section-title uk-heading-line ">
+                                <span>Restons en contact</span>
+                            </h2>
+                            <p class="uk-text-bold">Je suis là pour répondre à toutes vos questions !</p>
+
+                            <form class="uk-form-stacked" action="https://formspree.io/romain@romainodet.fr"
+                                  method="POST">
+                                <div class="uk-grid uk-grid-small uk-child-width-1-2@s">
+                                    <div>
+                                        <div class="uk-margin">
+                                            <label for="f_email" class="uk-form-label">Email*</label>
+                                            <div class="uk-form-controls uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" data-uk-icon="icon: user"></span>
+                                                <input class="yb-input uk-input  uk-border-rounded" type="email"
+                                                       name="_replyto" id="f_email"
+                                                       placeholder=" Votre email ici . . ."/>
+                                            </div>
+                                            <small class="uk-text-danger err-msg" id="f_email_error"></small>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-margin">
+                                            <label for="f_phone" class="uk-form-label">Téléphone*</label>
+                                            <div class="uk-form-controls uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" data-uk-icon="icon: phone"></span>
+                                                <input class="yb-input uk-input uk-border-rounded" type="text"
+                                                       name="f_phone" id="f_phone"
+                                                       placeholder=" Votre téléphone ici . . ."/>
+                                            </div>
+                                            <small class="uk-text-danger err-msg" id="f_phone_error"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Sujet*</label>
+                                    <div class="uk-form-controls uk-grid-small uk-child-width-auto uk-grid">
+                                        <label><input class="uk-radio" type="radio" name="f_subject" value="General"
+                                                      checked/>
+                                            Général</label>
+                                        <label><input class="uk-radio" type="radio" name="f_subject"
+                                                      value="Project Preview"/> Projet</label>
+                                        <label><input class="uk-radio" type="radio" name="f_subject" value="Hire Me"/>
+                                            Me recruter</label>
+                                    </div>
+                                </div>
+                                <div class="uk-margin ">
+                                    <label for="f_message" class="uk-form-label">Message*</label>
+                                    <div class="uk-form-controls">
+                                        <textarea class="yb-input  uk-textarea uk-border-rounded" rows="7"
+                                                  name="f_message" id="f_message"
+                                                  placeholder="Votre message ici . . ."></textarea>
+                                    </div>
+                                    <small class="uk-text-danger err-msg" id="f_message_error"></small>
+                                </div>
+                                <div class="uk-margin-top">
+                                    <button class="uk-button uk-button-primary uk-button-large  yb-btn" type="submit"
+                                            id="btn-contact-form" data-textreset="Envoyer!">
+                                        <span class="uk-margin-small-right btn-text-wrap">Envoyer!</span>
+                                        <span data-uk-icon="arrow-right" class="uk-icon"> </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class=" uk-width-1-4@m yb-section-padding yb-contact-right">
+                        <p class="uk-margin-medium-bottom uk-visible@m">
+                            <img src="{{ url_for('static', filename='src/img/empty.png') }}"
+                                 data-src="{{ url_for('static', filename='src/img/profile_square.jpg') }}" width="500"
+                                 height="500"
+                                 data-uk-img alt="" class="uk-border-circle"/>
+                        </p>
+                        <ul class="uk-list uk-list-divider uk-text-small yb-contact-mini">
+                            <li class="uk-flex uk-flex-middle">
+                                <span data-uk-icon="mail" class="uk-flex-none uk-text-primary "></span>
+                                <span>romain@romainodet.fr</span>
+                            </li>
+                            <li class="uk-flex uk-flex-middle">
+                                <span data-uk-icon="phone" class="uk-flex-none uk-text-primary"></span>
+                                <span> Sur demande</span>
+                            </li>
+                            <li class="uk-flex uk-flex-middle">
+                                <span data-uk-icon="location" class="uk-flex-none uk-text-primary "></span>
+                                <span>Région lyonnaise</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact section -->
+    </main> <!-- end main section -->
+{% endblock %}
